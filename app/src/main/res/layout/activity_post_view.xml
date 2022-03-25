@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_setting_fragment"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?android:attr/windowBackground"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/back"
+                    android:layout_marginRight="-80dp"
+                    android:text="Posts"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar_setting">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relLayout1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/profile_photo"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="tareqabunasser"
+                    android:layout_toRightOf="@+id/profile_photo"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/username"
+                    android:textColor="@color/black"
+                    />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_ellipses"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/ivEllipses"/>
+
+            </RelativeLayout>
+
+
+
+
+
+            <com.example.myapplication.Utils.SquareImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/post_image"
+                android:layout_below="@id/relLayout1"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/relLayout2"
+                android:layout_below="@+id/post_image">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/heartLayout"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/image_heart_red"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_heart_red"
+                        />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:id="@+id/image_heart"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/ic_heart_white"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/speech_bubble"
+                    android:layout_toRightOf="@+id/heartLayout"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_speech_bubble"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout3"
+                android:layout_below="@+id/relLayout2"
+                android:padding="10dp"
+                android:layout_marginBottom="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liked by Mitch, Tom, Mohammed and 30 others"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:id="@+id/image_likes"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mitch.tabian moutains #earthporn #mountains"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:background="@color/white"
+                    android:id="@+id/image_caption"
+                    android:layout_below="@+id/image_likes"
+                   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all 3 comments"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/image_caption"
+                    android:id="@+id/image_comments_link"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 DAYS AGO"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/image_comments_link"
+                    android:id="@+id/image_time_posted"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

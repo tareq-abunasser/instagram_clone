@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottom_navigation"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation_menu"
+            app:itemIconTint="@color/selector"
+
+            />
+    </RelativeLayout>
+
+</merge>
+
+
+
+    <!--    <com.google.android.material.appbar.AppBarLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/bottom"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        >-->
+    <!--    </com.google.android.material.appbar.AppBarLayout>-->

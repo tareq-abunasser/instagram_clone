@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home.HomeFragment">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bar">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_camera"
+            android:id="@+id/camera_image"
+            android:layout_marginTop="7dp"
+            />
+
+            <ImageView
+                android:id="@+id/insta_image"
+                android:layout_width="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/ic_instagram"
+                />
+            <ImageView
+                android:id="@+id/send_image"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_send"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view_story"
+        android:layout_margin="5dp"
+        android:layout_below="@id/bar"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+
+
+    <!--    android:layout_below="@+id/container"-->
+<!--    android:layout_below="@id/tabs"-->
+
+
+
+
+
+
+    <!-- Top toolbar-->
+
+    <!--        <com.google.android.material.appbar.AppBarLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:id="@+id/tabs"-->
+    <!--            >-->
+
+    <!--            <com.google.android.material.tabs.TabLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="?android:attr/windowBackground"-->
+    <!--               >-->
+
+    <!--            </com.google.android.material.tabs.TabLayout>-->
+    <!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <!-- top toolbar -->
+
+<!--
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_above="@id/bottom"
+android:id="@+id/fragment_container"/>
+
+<com.google.android.material.appbar.AppBarLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/bottom"
+android:layout_alignParentBottom="true"
+tools:ignore="MissingConstraints"
+    >
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottom_navigation"
+    app:itemIconTint="@color/selector"
+    app:labelVisibilityMode="unlabeled"
+    android:background="?android:attr/windowBackground"
+    app:menu="@menu/bottom_navigation"
+    />
+</com.google.android.material.appbar.AppBarLayout>
+  -->
+
+<!--
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/tabs">
+
+    </androidx.viewpager.widget.ViewPager>  -->
+
+    <!--    <androidx.viewpager.widget.ViewPager-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@+id/fragment_container"-->
+    <!--        android:layout_below="@+id/tabs">-->
+
+    <!--    </androidx.viewpager.widget.ViewPager>-->
+
+
+

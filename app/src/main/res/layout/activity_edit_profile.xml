@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.EditProfile.EditProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activitymain"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?android:attr/windowBackground"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/close"
+                    android:src="@drawable/ic_close"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Edit Profile"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="40dp"
+                   />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/right"
+                    android:src="@drawable/ic_right"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="20dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profile_photo"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Photo"
+        android:id="@+id/changeProfilePhoto"
+        android:layout_below="@+id/profile_photo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/link_blue"
+        android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+
+               >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:inputType="textNoSuggestions"
+                    android:text="Tareq abu nasser"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="username"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:inputType="textNoSuggestions"
+                    android:text="tareqabunasser"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/website"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:hint="Website"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bio"
+                android:background="@null"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:inputType="textNoSuggestions"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:hint="Bio"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Professional Tools"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gray_white_border"
+                android:textColor="@color/link_blue"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                />
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/gray_white_border"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Information"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail Address"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter your email"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone number"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/phone_number"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:hint="phone number"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Gender"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mgender"
+                        android:background="@null"
+                        android:textColor="@color/black"
+                        android:hint="Prefer Not to Say"
+                        />
+                </LinearLayout>
+     </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

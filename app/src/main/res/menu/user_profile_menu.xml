@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/report"
+        android:title="Report"/>
+
+    <item android:id="@+id/block"
+        android:title="Block"/>
+
+    <item android:id="@+id/about_this_account"
+        android:title="About this Account"/>
+
+
+    <item android:id="@+id/restrict"
+        android:title="Restrict"/>
+
+    <item android:id="@+id/hide_your_story"
+        android:title="Hie Your Story"/>
+
+    <item android:id="@+id/copy_profile_url"
+        android:title="Copy Profile URL"/>
+
+    <item android:id="@+id/share_this_profile"
+        android:title="Share this Profile"/>
+
+
+</menu>

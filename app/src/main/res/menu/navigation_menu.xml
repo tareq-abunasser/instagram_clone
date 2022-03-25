@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_archive"
+            android:title="Archive"
+            android:icon="@drawable/ic_archive"
+             />
+        <item
+            android:id="@+id/nav_your_activity"
+            android:icon="@drawable/ic_your_activity"
+            android:title="Your Activity" />
+        <item
+            android:id="@+id/nav_nametag"
+            android:icon="@drawable/ic_namtag"
+            android:title="Nametag" />
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/ic_saved"
+            android:title="Saved" />
+        <item
+            android:id="@+id/nav_close_friends"
+            android:icon="@drawable/ic_close_friends"
+            android:title="Close Friends" />
+        <item
+            android:id="@+id/nav_discover_people"
+            android:icon="@drawable/ic_discover_person"
+            android:title="Discover People" />
+    </group>
+</menu>
